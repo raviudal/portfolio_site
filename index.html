@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Algorithmic Trading & FinTech Systems Engineer | Portfolio</title>
+  <meta name="description" content="Portfolio of a FinTech engineer building high-frequency execution engines, algorithmic trading bots, broker API bridges, and quant backtesting software." />
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Inter & JetBrains Mono Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            mono: ['"Fira Code"', 'monospace'],
+          },
+          colors: {
+            brand: {
+              emerald: '#10B981',
+              cyan: '#06B6D4',
+              dark: '#0B0F17',
+              card: '#111827',
+              border: '#1F2937',
+              accent: '#3B82F6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #07090e;
+      color: #E2E8F0;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .grid-bg {
+      background-size: 40px 40px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+    .glow-cyan {
+      box-shadow: 0 0 50px -10px rgba(6, 182, 212, 0.25);
+    }
+    .glow-emerald {
+      box-shadow: 0 0 40px -10px rgba(16, 185, 129, 0.25);
+    }
+  </style>
+</head>
+<body class="grid-bg min-h-screen text-slate-200 antialiased selection:bg-cyan-500 selection:text-black">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 backdrop-blur-md bg-black/60 border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 group">
+        <div class="w-9 h-9 rounded-lg bg-gradient-to-tr from-cyan-500 to-emerald-400 flex items-center justify-center font-mono font-bold text-black text-lg shadow-md group-hover:scale-105 transition-transform">
+          &lt;/&gt;
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold tracking-tight text-white leading-none text-base">QuantDev<span class="text-emerald-400">.io</span></span>
+          <span class="text-[10px] text-slate-400 tracking-wider uppercase font-mono mt-0.5">Trading Systems Engineer</span>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+        <a href="#services" class="hover:text-emerald-400 transition-colors">Specializations</a>
+        <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects & Code</a>
+        <a href="#architecture" class="hover:text-emerald-400 transition-colors">Architecture</a>
+        <a href="#pricing" class="hover:text-emerald-400 transition-colors">Engagement Tiers</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/raviudal" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-2 px-3.5 py-1.5 text-xs font-mono font-medium rounded-lg border border-slate-700 hover:border-slate-500 bg-slate-900/60 hover:bg-slate-800 transition">
+          <i data-lucide="github" class="w-4 h-4 text-slate-300"></i>
+          <span>GitHub</span>
+        </a>
+        <a href="#contact" class="inline-flex items-center gap-2 px-4 py-2 text-xs md:text-sm font-semibold rounded-lg bg-gradient-to-r from-emerald-500 to-cyan-500 text-slate-950 hover:brightness-110 transition shadow-lg shadow-emerald-500/20">
+          <span>Book Consultation</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="pt-32 pb-20 md:pt-40 md:pb-32 relative overflow-hidden">
+    <!-- Ambient Light Orbs -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-cyan-500/10 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="absolute top-1/3 left-1/3 -translate-x-1/2 w-[400px] h-[250px] bg-emerald-500/10 rounded-full blur-[100px] pointer-events-none -z-10"></div>
+
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <!-- Status Badge -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-xs font-mono mb-8 backdrop-blur-sm">
+        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>Open for Custom Bot & FinTech Engagements</span>
+      </div>
+
+      <!-- Main Headline -->
+      <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white max-w-4xl mx-auto leading-[1.12]">
+        Custom Algorithmic <br />
+        <span class="bg-gradient-to-r from-emerald-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
+          Trading Software & Execution Bots
+        </span>
+      </h1>
+
+      <p class="mt-6 text-base sm:text-xl text-slate-300 max-w-2xl mx-auto leading-relaxed">
+        I architect low-latency execution engines, custom broker API connectors, high-speed backtesters, and automated risk managers for quantitative funds and discretionary traders.
+      </p>
+
+      <!-- Trust Badges / Stats -->
+      <div class="mt-10 flex flex-wrap items-center justify-center gap-4 text-xs sm:text-sm font-mono text-slate-400">
+        <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-slate-900/80 border border-slate-800">
+          <i data-lucide="shield-check" class="w-4 h-4 text-emerald-400"></i> Strict NDA & Code Ownership
+        </span>
+        <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-slate-900/80 border border-slate-800">
+          <i data-lucide="zap" class="w-4 h-4 text-cyan-400"></i> Millisecond Order Routing
+        </span>
+        <span class="flex items-center gap-1.5 px-3 py-1.5 rounded-md bg-slate-900/80 border border-slate-800">
+          <i data-lucide="lock" class="w-4 h-4 text-amber-400"></i> Zero Capital Custody
+        </span>
+      </div>
+
+      <!-- CTA Buttons -->
+      <div class="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <a href="#contact" class="w-full sm:w-auto px-7 py-3.5 rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 font-bold text-sm tracking-wide hover:shadow-lg hover:shadow-cyan-500/25 transition-all flex items-center justify-center gap-2">
+          <span>Discuss Your Strategy</span>
+          <i data-lucide="terminal" class="w-4 h-4"></i>
+        </a>
+        <a href="#projects" class="w-full sm:w-auto px-7 py-3.5 rounded-xl border border-slate-700 bg-slate-900/60 hover:bg-slate-800 text-white font-medium text-sm transition-all flex items-center justify-center gap-2">
+          <i data-lucide="code-2" class="w-4 h-4 text-slate-400"></i>
+          <span>Explore Open-Source Repos</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE CODE / TERMINAL PREVIEW SECTION -->
+  <section class="max-w-5xl mx-auto px-6 -mt-6 mb-24">
+    <div class="rounded-2xl border border-slate-800 bg-slate-950/90 shadow-2xl overflow-hidden font-mono text-xs sm:text-sm glow-cyan">
+      <div class="px-4 py-3 bg-slate-900/90 border-b border-slate-800 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="w-3 h-3 rounded-full bg-rose-500/80"></div>
+          <div class="w-3 h-3 rounded-full bg-amber-500/80"></div>
+          <div class="w-3 h-3 rounded-full bg-emerald-500/80"></div>
+          <span class="ml-2 text-slate-400 text-[11px]">execution_engine_v3.py — Async Event Bus</span>
+        </div>
+        <div class="text-[11px] text-emerald-400 flex items-center gap-1.5 font-medium">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span> WebSocket Feed: Active
+        </div>
+      </div>
+      <div class="p-6 text-slate-300 space-y-2 overflow-x-auto leading-relaxed">
+        <p class="text-slate-500"># Production-grade async order routing with automated kill-switches</p>
+        <p><span class="text-cyan-400">async def</span> <span class="text-emerald-300">execute_signal</span>(signal: <span class="text-amber-300">TradeSignal</span>, broker: <span class="text-amber-300">BrokerClient</span>):</p>
+        <p class="pl-4 text-slate-400">slippage_guard = <span class="text-cyan-400">await</span> broker.evaluate_spread(signal.symbol, max_pct=<span class="text-purple-400">0.0015</span>)</p>
+        <p class="pl-4 text-slate-400"><span class="text-cyan-400">if not</span> slippage_guard.is_safe:</p>
+        <p class="pl-8 text-rose-400">logger.warn(f"Execution rejected: Spread too wide ({slippage_guard.spread_bps} bps)")</p>
+        <p class="pl-8 text-rose-400"><span class="text-cyan-400">return</span> ExecutionStatus.CANCELLED</p>
+        <p class="pl-4 text-emerald-400">order = <span class="text-cyan-400">await</span> broker.place_smart_order(symbol=signal.symbol, qty=signal.size, side=signal.side)</p>
+        <p class="pl-4 text-slate-400">logger.info(f"<span class="text-emerald-300">[FILLED]</span> {signal.symbol} | OrderID={order.id} | Latency: 11.4ms")</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES / CAPABILITIES -->
+  <section id="services" class="py-20 border-t border-slate-900 bg-slate-950/40">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold">Specializations</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">What I Architect & Build</p>
+        <p class="mt-4 text-slate-400 text-sm sm:text-base">Custom tailored solutions built strictly around your specific trading logic, API requirements, and risk appetite.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Service Card 1 -->
+        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-slate-700 transition group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i data-lucide="cpu" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Automated Execution Bots</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Reliable 24/7 algorithmic systems for Crypto (Binance, Bybit), Equities, and Futures (Interactive Brokers, Tradovate, MT4/MT5).
+          </p>
+          <ul class="text-xs text-slate-300 font-mono space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Market Making & Arbitrage</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Trend-Following / Grid Systems</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-slate-700 transition group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i data-lucide="arrow-left-right" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">TradingView to Broker Bridges</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Transform TradingView alerts (Pine Script) into lightning-fast, zero-human-intervention order fills on your broker using secure webhooks.
+          </p>
+          <ul class="text-xs text-slate-300 font-mono space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Sub-100ms Webhook Routing</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Dynamic Position Sizing</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-slate-700 transition group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 text-blue-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Vectorized Backtesting Engines</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Custom backtesting simulators that factor in realistic slippage, fee schedules, tick-level order book depth, and market latency.
+          </p>
+          <ul class="text-xs text-slate-300 font-mono space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Monte Carlo Simulations</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Sharpe / Sortino / Drawdown Metrics</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-slate-700 transition group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-purple-500/10 border border-purple-500/20 text-purple-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i data-lucide="shield-alert" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Risk Systems & Kill-Switches</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Protect your capital from erratic market flash crashes, runaway loops, broker disconnects, and max daily loss breaches.
+          </p>
+          <ul class="text-xs text-slate-300 font-mono space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Daily Loss & Drawdown Hard-Stop</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Auto-Flatten All Positions</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-slate-700 transition group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-amber-500/10 border border-amber-500/20 text-amber-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i data-lucide="bell" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Telegram & Discord Telemetry</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Real-time interactive monitoring bots. Receive fills, P&L reports, error alerts, and send manual trigger commands right from your phone.
+          </p>
+          <ul class="text-xs text-slate-300 font-mono space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Instant Mobile Trade Alerts</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Remote Pause / Resume Commands</li>
+          </ul>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/50 hover:border-slate-700 transition group hover:-translate-y-1">
+          <div class="w-12 h-12 rounded-xl bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 flex items-center justify-center mb-6 group-hover:scale-110 transition">
+            <i data-lucide="server" class="w-6 h-6"></i>
+          </div>
+          <h3 class="text-xl font-bold text-white mb-2">Cloud & VPS Deployment</h3>
+          <p class="text-slate-400 text-sm leading-relaxed mb-4">
+            Deploy your algos on co-located, ultra-low-latency Linux servers (AWS, DigitalOcean, Hetzner) configured with systemd autorestarts and Docker.
+          </p>
+          <ul class="text-xs text-slate-300 font-mono space-y-2">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Zero-Downtime Auto-Restart</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-emerald-400"></i> Encrypted Credential Vaults</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OPEN-SOURCE & FEATURED REPOSITORIES -->
+  <section id="projects" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-14">
+      <div>
+        <h2 class="text-xs font-mono uppercase tracking-widest text-cyan-400 font-semibold">Proof of Work</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Featured Repositories & Tools</p>
+        <p class="mt-3 text-slate-400 text-sm">Working code hosted on GitHub demonstrating architecture and execution standards.</p>
+      </div>
+      <a href="https://github.com/raviudal" target="_blank" rel="noopener noreferrer" class="mt-4 md:mt-0 inline-flex items-center gap-2 text-sm text-slate-300 hover:text-white font-mono">
+        <span>View all on GitHub</span>
+        <i data-lucide="external-link" class="w-4 h-4 text-emerald-400"></i>
+      </a>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+      <!-- Project 1 -->
+      <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/60 flex flex-col justify-between hover:border-slate-700 transition">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 font-mono text-xs">Python • WebSockets • AsyncIO</span>
+            <a href="#" class="text-slate-400 hover:text-white"><i data-lucide="github" class="w-5 h-5"></i></a>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">Crypto Arbitrage & Triangular Spreader</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Real-time multi-exchange triangular arbitrage engine scanning Binance and Bybit order books. Utilizes asynchronous WebSockets to execute sub-30ms atomic fill orders.
+          </p>
+          <div class="grid grid-cols-2 gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800/80 mb-6 font-mono text-xs">
+            <div>
+              <span class="text-slate-500 block">Avg Latency</span>
+              <span class="text-white font-semibold text-sm">18.2 ms</span>
+            </div>
+            <div>
+              <span class="text-slate-500 block">Fail-Safe</span>
+              <span class="text-emerald-400 font-semibold text-sm">Strict Slippage Guard</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 text-xs font-mono">
+          <span class="text-slate-400">Status: <span class="text-emerald-400">Production Ready</span></span>
+          <a href="#" class="text-cyan-400 hover:underline flex items-center gap-1 font-sans font-medium">Explore Repo &rarr;</a>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/60 flex flex-col justify-between hover:border-slate-700 transition">
+        <div>
+          <div class="flex items-center justify-between mb-4">
+            <span class="px-2.5 py-1 rounded bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 font-mono text-xs">FastAPI • Docker • Redis</span>
+            <a href="#" class="text-slate-400 hover:text-white"><i data-lucide="github" class="w-5 h-5"></i></a>
+          </div>
+          <h3 class="text-2xl font-bold text-white mb-3">TradingView Webhook Execution Bridge</h3>
+          <p class="text-slate-300 text-sm leading-relaxed mb-6">
+            Enterprise microservice that receives encrypted TradingView alerts, computes lot sizes based on dynamic account balance and risk, and routes orders to Interactive Brokers API.
+          </p>
+          <div class="grid grid-cols-2 gap-4 p-4 rounded-xl bg-slate-950 border border-slate-800/80 mb-6 font-mono text-xs">
+            <div>
+              <span class="text-slate-500 block">Supported Brokers</span>
+              <span class="text-white font-semibold text-sm">IBKR, Binance, Upstox</span>
+            </div>
+            <div>
+              <span class="text-slate-500 block">Security</span>
+              <span class="text-cyan-400 font-semibold text-sm">HMAC Authentication</span>
+            </div>
+          </div>
+        </div>
+        <div class="flex items-center justify-between border-t border-slate-800/80 pt-4 text-xs font-mono">
+          <span class="text-slate-400">Status: <span class="text-emerald-400">Open Source</span></span>
+          <a href="#" class="text-cyan-400 hover:underline flex items-center gap-1 font-sans font-medium">Explore Repo &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE & SECURITY PILLARS -->
+  <section id="architecture" class="py-20 border-t border-slate-900 bg-slate-950/40">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="text-xs font-mono uppercase tracking-widest text-emerald-400 font-semibold">Engineering Standards</h2>
+        <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">Why Serious Traders Work With Me</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 rounded-xl border border-slate-800/80 bg-slate-900/30">
+          <div class="text-emerald-400 font-mono text-2xl font-bold mb-2">01.</div>
+          <h4 class="text-lg font-bold text-white mb-2">Capital Discretion</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            I never request or store your private funds. Your bots run on your isolated VPS, and API keys are restricted to trading permissions only (withdrawals permanently disabled).
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-800/80 bg-slate-900/30">
+          <div class="text-cyan-400 font-mono text-2xl font-bold mb-2">02.</div>
+          <h4 class="text-lg font-bold text-white mb-2">Strategy IP & NDA</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Your proprietary indicators and edge remain 100% yours. I sign binding non-disclosure agreements before reviewing trading formulas.
+          </p>
+        </div>
+
+        <div class="p-6 rounded-xl border border-slate-800/80 bg-slate-900/30">
+          <div class="text-blue-400 font-mono text-2xl font-bold mb-2">03.</div>
+          <h4 class="text-lg font-bold text-white mb-2">Real-World Failsafes</h4>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Every piece of software includes network retry logic, exchange rate limit handlers, automated position flattening, and emergency kill-switches.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENGAGEMENT TIERS / PRICING -->
+  <section id="pricing" class="py-20 max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-16">
+      <h2 class="text-xs font-mono uppercase tracking-widest text-cyan-400 font-semibold">Clear Engagements</h2>
+      <p class="mt-2 text-3xl sm:text-4xl font-extrabold text-white">How We Can Work Together</p>
+      <p class="mt-4 text-slate-400 text-sm">Fixed-scope milestone contracts or ongoing infrastructure retainers.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Tier 1 -->
+      <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/40 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-mono uppercase text-slate-400 tracking-wider mb-2">Starter Integration</div>
+          <h3 class="text-2xl font-bold text-white mb-4">Webhook & Alert Bot</h3>
+          <p class="text-slate-400 text-sm mb-6">Ideal for traders wanting to bridge TradingView signals straight into their broker without manual clicks.</p>
+          <ul class="text-sm text-slate-300 space-y-3 mb-8">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> TradingView webhook integration</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 1 Broker API connection</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Position sizing logic</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Telegram trade notifications</li>
+          </ul>
+        </div>
+        <a href="#contact" class="w-full py-3 text-center text-sm font-semibold rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-white transition">Request Scoping</a>
+      </div>
+
+      <!-- Tier 2 (Featured) -->
+      <div class="p-8 rounded-2xl border-2 border-emerald-500/80 bg-slate-900/80 flex flex-col justify-between relative shadow-xl glow-emerald">
+        <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-1 bg-emerald-500 text-slate-950 font-mono text-xs font-bold rounded-full">
+          MOST POPULAR
+        </div>
+        <div>
+          <div class="text-xs font-mono uppercase text-emerald-400 tracking-wider mb-2">Custom Build</div>
+          <h3 class="text-2xl font-bold text-white mb-4">Full Execution Engine</h3>
+          <p class="text-slate-300 text-sm mb-6">Turn your manual discretionary strategy into an autonomous, 24/7 low-latency bot with failsafes.</p>
+          <ul class="text-sm text-slate-200 space-y-3 mb-8">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Full custom logic implementation</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Multi-asset / Multi-pair support</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Advanced risk & kill-switch system</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Cloud VPS deployment & systemd</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 14 days post-launch support</li>
+          </ul>
+        </div>
+        <a href="#contact" class="w-full py-3 text-center text-sm font-bold rounded-xl bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 hover:brightness-110 transition">Discuss Your Project</a>
+      </div>
+
+      <!-- Tier 3 -->
+      <div class="p-8 rounded-2xl border border-slate-800 bg-slate-900/40 flex flex-col justify-between">
+        <div>
+          <div class="text-xs font-mono uppercase text-slate-400 tracking-wider mb-2">Proprietary / Enterprise</div>
+          <h3 class="text-2xl font-bold text-white mb-4">Quant Infrastructure Retainer</h3>
+          <p class="text-slate-400 text-sm mb-6">Ongoing engineering partnership for quant funds, prop desk teams, or active syndicates.</p>
+          <ul class="text-sm text-slate-300 space-y-3 mb-8">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Continuous strategy refinement</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Backtester optimization & speedup</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> 24/7 server & execution health monitoring</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Priority latency tuning & SLA</li>
+          </ul>
+        </div>
+        <a href="#contact" class="w-full py-3 text-center text-sm font-semibold rounded-xl border border-slate-700 bg-slate-800 hover:bg-slate-700 text-white transition">Book Scoping Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT & CONSULTATION BOOKING -->
+  <section id="contact" class="py-24 border-t border-slate-900 bg-slate-950/80">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-emerald-500 to-cyan-400 mx-auto flex items-center justify-center text-slate-950 mb-6 shadow-lg shadow-cyan-500/20">
+        <i data-lucide="send" class="w-7 h-7"></i>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-extrabold text-white">Let’s Build Your Trading Engine</h2>
+      <p class="mt-4 text-slate-300 max-w-xl mx-auto text-base">
+        Have a strategy you want automated, a custom indicator to build, or an execution bottleneck to eliminate? Send a message or schedule a 15-minute call.
+      </p>
+
+      <div class="mt-10 p-8 rounded-2xl border border-slate-800 bg-slate-900/60 max-w-xl mx-auto text-left shadow-2xl">
+        <form action="mailto:raviudal.udal@gmail.com" method="POST" enctype="text/plain" class="space-y-4">
+          <div>
+            <label class="block text-xs font-mono text-slate-400 mb-1">Your Name / Trading Syndicate</label>
+            <input type="text" placeholder="e.g. Alex (Quant Trader)" required class="w-full px-4 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-400 transition" />
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-400 mb-1">Email Address</label>
+            <input type="email" placeholder="alex@domain.com" required class="w-full px-4 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-400 transition" />
+          </div>
+          <div>
+            <label class="block text-xs font-mono text-slate-400 mb-1">What are you looking to build?</label>
+            <textarea rows="4" placeholder="Briefly describe your strategy type, target broker/exchange (e.g. Binance, IBKR), and any latency or feature requirements..." required class="w-full px-4 py-2.5 rounded-lg bg-slate-950 border border-slate-800 text-white text-sm focus:outline-none focus:border-cyan-400 transition"></textarea>
+          </div>
+          <button type="submit" class="w-full py-3.5 rounded-lg bg-gradient-to-r from-emerald-400 to-cyan-400 text-slate-950 font-bold text-sm hover:brightness-110 transition flex items-center justify-center gap-2">
+            <span>Send Strategy Inquiry</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </form>
+
+        <div class="mt-6 pt-6 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-400">
+          <a href="mailto:raviudal.udal@gmail.com" class="hover:text-emerald-400 flex items-center gap-1.5 transition">
+            <i data-lucide="mail" class="w-3.5 h-3.5"></i> raviudal.udal@gmail.com
+          </a>
+          <span class="text-slate-500">🔒 Mutual NDA available upon request</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-8 border-t border-slate-900 bg-black text-center text-xs font-mono text-slate-500">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+      <div>
+        © 2026 QuantDev. Built for traders who value speed, uptime, and security.
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="https://github.com/raviudal" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">GitHub</a>
+        <a href="#services" class="hover:text-slate-300 transition">Services</a>
+        <a href="#contact" class="hover:text-slate-300 transition">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Initialize Lucide icons
+    lucide.createIcons();
+  </script>
+</body>
+</html>
